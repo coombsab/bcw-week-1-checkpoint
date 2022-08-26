@@ -91,7 +91,7 @@ section {
 
 .hero-form {
   min-height: 25rem;
-  max-height: 50vh;
+  max-height: 55vh;
   min-width: 20rem;
   max-width: 20vw;
 }
@@ -109,6 +109,12 @@ section {
 .glass-card {
   background: var(--transparent-theme-accent);
   border: 1px solid var(--theme-accent);
+}
+
+.common-background {
+  background-image: url("https://images.unsplash.com/photo-1482977036925-e8fcaa643657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-position: center;
+  background-size: cover;
 }
 
 .btn-more {
@@ -129,4 +135,19 @@ section {
   max-height: 4rem;
   max-width: 4rem;
   border: 0.5rem solid var(--theme-accent);
+}
+
+@media screen and (min-width: 768px) {
+
+  .overlapping-box-md {
+    height: 45vh;
+  }
+
+  .overlapping-box-row-md {
+    max-height: 30vh;
+  }
+
+  .non-overlapping-box-md {
+    max-height: 30vh;
+  }
 }
