@@ -20,7 +20,6 @@ body.debug .container-fluid {
 body.debug .row {
   outline: 2px dashed red;
   outline-offset: -2px;
-  height: 10vh;
 }
 
 body.debug [class*="col-"] {
@@ -44,6 +43,10 @@ section {
   background-color: var(--theme-accent);
 }
 
+.bg-white {
+  background-color: var(--white);
+}
+
 .text-theme-primary {
   color: var(--theme-primary);
 }
@@ -56,8 +59,16 @@ section {
   color: var(--theme-accent);
 }
 
+.text-embolden {
+  font-weight: var(--boldness);
+}
+
 .navigation-bar {
   padding: var(--navbar-padding);
+}
+
+.font-large {
+  font-size: 6rem;
 }
 
 .vertical-bar-2 {
@@ -78,6 +89,13 @@ section {
   background-size: cover;
 }
 
+.hero-form {
+  min-height: 25rem;
+  max-height: 50vh;
+  min-width: 20rem;
+  max-width: 20vw;
+}
+
 .btn-submit {
   border: 1px solid var(--theme-accent);
   background-color: var(--theme-accent);
@@ -91,4 +109,24 @@ section {
 .glass-card {
   background: var(--transparent-theme-accent);
   border: 1px solid var(--theme-accent);
+}
+
+.btn-more {
+  border: 1px solid var(--theme-secondary);
+  background-color: var(--theme-secondary);
+  color: var(--theme-primary);
+}
+
+.btn-more:hover {
+  background-color: var(--white);
+  border: 1px solid var(--theme-secondary);
+}
+
+.img-circle {
+  border-radius: 50%;
+  min-height: 3rem;
+  min-width: 3rem;
+  max-height: 4rem;
+  max-width: 4rem;
+  border: 0.5rem solid var(--theme-accent);
 }
