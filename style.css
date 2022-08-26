@@ -1,0 +1,94 @@
+:root {
+  --theme-primary: #131212;
+  --theme-secondary: #a99fe0;
+  --theme-accent: #2f2e41;
+  --transparent-theme-accent: rgba(47, 46, 65, 0.47);
+  --white: #eeeaea;
+  --font-size: 16px;
+  --boldness: 700;
+  --section-padding: 3rem;
+  --navbar-padding: 1rem;
+  --button-padding: 0.75rem 1.25rem;
+}
+
+body.debug .container,
+body.debug .container-fluid {
+  outline: 2px double blue;
+  outline-offset: -2px;
+}
+
+body.debug .row {
+  outline: 2px dashed red;
+  outline-offset: -2px;
+  height: 10vh;
+}
+
+body.debug [class*="col-"] {
+  outline: 2px dotted forestgreen;
+  outline-offset: -3px;
+}
+
+section {
+  padding: var(--section-padding);
+}
+
+.bg-theme-primary {
+  background-color: var(--theme-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--theme-secondary);
+}
+
+.bg-theme-accent {
+  background-color: var(--theme-accent);
+}
+
+.text-theme-primary {
+  color: var(--theme-primary);
+}
+
+.text-theme-secondary {
+  color: var(--theme-secondary);
+}
+
+.text-theme-accent {
+  color: var(--theme-accent);
+}
+
+.navigation-bar {
+  padding: var(--navbar-padding);
+}
+
+.vertical-bar-2 {
+  height: 5rem;
+  width: 1rem;
+  background-color: var(--theme-accent);
+}
+
+/* ANCHOR trying to adjust view height of the col-4 form that is inside the row with the hero image so I can center the form and text vertically */
+.hero-vh {
+  height: 75vh;
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1510917065317-aa26965fe730?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-submit {
+  border: 1px solid var(--theme-accent);
+  background-color: var(--theme-accent);
+  color: var(--theme-secondary);
+}
+
+.btn-submit:hover {
+  color: var(--theme-accent);
+}
+
+.glass-card {
+  background: var(--transparent-theme-accent);
+  border: 1px solid var(--theme-accent);
+}
