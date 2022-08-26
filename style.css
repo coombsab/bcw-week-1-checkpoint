@@ -4,11 +4,12 @@
   --theme-accent: #2f2e41;
   --transparent-theme-accent: rgba(47, 46, 65, 0.47);
   --white: #eeeaea;
+  --white-more-btn: #dee2e5;
   --font-size: 16px;
   --boldness: 700;
   --section-padding: 3rem;
   --navbar-padding: 1rem;
-  --button-padding: 0.75rem 1.25rem;
+  --button-padding: 0.25rem 0.75rem;
 }
 
 body.debug .container,
@@ -25,6 +26,10 @@ body.debug .row {
 body.debug [class*="col-"] {
   outline: 2px dotted forestgreen;
   outline-offset: -3px;
+}
+
+* {
+  font-family: 'Creepster', sans-serif;
 }
 
 section {
@@ -100,6 +105,7 @@ section {
   border: 1px solid var(--theme-accent);
   background-color: var(--theme-accent);
   color: var(--theme-secondary);
+  padding: var(--button-padding);
 }
 
 .btn-submit:hover {
@@ -121,10 +127,11 @@ section {
   border: 1px solid var(--theme-secondary);
   background-color: var(--theme-secondary);
   color: var(--theme-primary);
+  padding: var(--button-padding);
 }
 
 .btn-more:hover {
-  background-color: var(--white);
+  background-color: var(--white-more-btn);
   border: 1px solid var(--theme-secondary);
 }
 
@@ -150,4 +157,18 @@ section {
   .non-overlapping-box-md {
     max-height: 30vh;
   }
+
+
 }
+
+@media screen and (max-width: 768px) {
+  .fs-md-7 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 992) {
+  .fs-lg-4 {
+    font-size: 2.5rem;
+  }
+} 
