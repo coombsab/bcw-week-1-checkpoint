@@ -28,9 +28,14 @@
     <nav>
       <section class="navigation-bar container-fluid bg-theme-primary text-theme-secondary">
         <div class="row">
-          <div class="col-12 d-flex gap-2 align-items-center">
-            <i class="mdi mdi-knife-military text-theme-accent fs-4"></i>
-            <h4 class="mb-0">Lorem, ipsum dolor</h4>
+          <div class="col-12 d-flex gap-2 align-items-center justify-content-between">
+            <div class="d-flex gap-2 align-items-center">
+              <i class="mdi mdi-knife-military text-theme-accent fs-4"></i>
+              <h4 class="mb-0">Lorem, ipsum dolor</h4>
+            </div>
+            <div>
+              <a href="#more-info">More Info</a>
+            </div>
           </div>
         </div>
       </section>
@@ -38,7 +43,7 @@
   </header>
 
   <main>
-    <section class="hero container-fluid">
+    <section class="hero container-fluid" id="hero">
       <div class="row p-md-5 justify-content-center justify-content-md-between">
         <div class="col-md-4 d-flex flex-column justify-content-center align-items-center align-items-md-start">
           <div class="text-theme-secondary">
@@ -86,12 +91,15 @@
         </div>
       </div>
     </section>
-    <section class="icons-text container-fluid bg-theme-accent">
+    <section class="icons-text container-fluid bg-theme-accent" id="icons-text">
       <div class="row overlapping-box-row-md gap-4 p-4">
-        <div class="col-md-5 non-overlapping-box-md text-theme-secondary order-md-1 order-2">
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, modi! Atque, officia.</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor voluptates, voluptatum aliquid quod nobis
-            in alias, quae obcaecati blanditiis illum cupiditate beatae amet, ab repellat!</p>
+        <div class="col-md-5 non-overlapping-box-md text-theme-secondary order-md-1 order-2 d-flex gap-3">
+          <div class="vertical-bar d-none d-md-block"></div>
+          <div>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, modi! Atque, officia.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor voluptates, voluptatum aliquid quod nobis
+              in alias, quae obcaecati blanditiis illum cupiditate beatae amet, ab repellat!</p>
+          </div>
         </div>
         <div
           class="overlapping-box-md col-md-6 bg-theme-secondary text-theme-primary d-flex flex-column justify-content-around p-3 order-md-2 order-1 rounded gap-2">
@@ -119,26 +127,30 @@
       </div>
     </section>
     <section class="common-background p-0">
-      <section class="more-info container-fluid">
+      <section class="more-info container-fluid" id="more-info">
         <div class="row px-5 p-md-5">
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="https://thiscatdoesnotexist.com" alt="Mew, I'm a cat">
+          <div class="col-md-4 text-center">
+            <!-- <img class="img-fluid rounded" src="https://thiscatdoesnotexist.com" alt="Mew, I'm a cat"> -->
+            <video class="video-fluid video-fluid-md video-fluid-lg video-border rounded" src="assets/cats-playing.mp4"
+              controls></video>
           </div>
-          <div class="col-md-8 ps-md-5 d-flex flex-column align-items-center">
-            <div class="d-flex mt-md-5 align-items-center">
+          <div class="col-md-8 ps-md-5 d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex mt-md-5 align-items-center align-self-start">
               <i class="mdi mdi-star-face font-large"></i>
-              <h2>Lorem ipsum dolor sit amet.</h2>
+              <h2>Two Kittens Playing Near a Hollow Block</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aperiam. Voluptatum temporibus
-              corporis, impedit iste a iusto debitis dolorum consequuntur expedita quae atque laboriosam libero, nihil
-              eius facere quas qui.</p>
+            <p class="ls-1">two kittens fight over dominance of the cinder block. Or maybe they are just playing, who
+              really knows. Thanks for the video, <strong>Grasya Moon</strong> at
+              <em>https://www.pexels.com/video/two-kittens-playing-near-a-hollow-block-4624594/</em>.
+            </p>
             <button class="btn btn-more align-self-end">MORE</button>
           </div>
         </div>
       </section>
-      <section class="carousel container-fluid">
+      <section class="carousel container-fluid" id="carousel">
         <div class="row">
-          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center p-md-5 px-5 py-3 order-2 order-md-1">
+          <div
+            class="col-md-4 d-flex flex-column justify-content-center align-items-center p-md-5 px-5 py-3 order-2 order-md-1">
             <div
               class="d-flex flex-column justify-content-center align-items-center bg-theme-secondary text-theme-primary rounded p-3 gap-3">
               <div class="d-flex">
@@ -149,11 +161,14 @@
                   adipisci nihil in quibusdam. Numquam voluptate cum obcaecati, ea in natus.<i
                     class="mdi mdi-format-quote-close"></i></p>
               </div>
-              <img src="https://thiscatdoesnotexist.com/" alt="" class="img-fluid img-circle">
-              <p class="text-embolden">Tim the Cat</p>
+              <img
+                src="https://images.unsplash.com/photo-1617799890023-c7b03d079b1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="" class="img-fluid img-circle">
+              <p class="text-embolden">Baby Yoda</p>
             </div>
           </div>
-          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center p-md-5 px-5 py-3 order-1 order-md-2">
+          <div
+            class="col-md-4 d-flex flex-column justify-content-center align-items-center p-md-5 px-5 py-3 order-1 order-md-2">
             <div
               class="d-flex flex-column justify-content-center align-items-center bg-theme-secondary text-theme-primary rounded p-3 gap-3">
               <div class="d-flex gap-4">
@@ -185,26 +200,31 @@
                   adipisci nihil in quibusdam. Numquam voluptate cum obcaecati, ea in natus.<i
                     class="mdi mdi-format-quote-close"></i></p>
               </div>
-              <img src="https://thiscatdoesnotexist.com/" alt="" class="img-fluid img-circle">
-              <p class="text-embolden">Tim the Cat</p>
+              <img
+                src="https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                alt="" class="img-fluid img-circle">
+              <p class="text-embolden">Darth Vader</p>
             </div>
           </div>
         </div>
       </section>
     </section>
-    <section class="about container-fluid bg-theme-accent">
+    <section class="about container-fluid bg-theme-accent" id="about">
       <div class="row text-theme-secondary px-5">
-        <div class="col-12">
-          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex labore quidem doloremque quas, esse aliquam!
-          </p>
+        <div class="col-12 d-flex gap-3">
+          <div class="vertical-bar d-none d-md-block"></div>
+          <div>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex labore quidem doloremque quas, esse aliquam!
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <section class="end container-fluid bg-theme-primary">
+    <section class="end container-fluid bg-theme-primary" id="footer">
       <div class="row text-theme-secondary">
         <div class="col-12 d-flex flex-column align-items-center justify-content-center gap-2 px-5 px-md-0 text-center">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, pariatur? Voluptatibus quaerat id tempora
